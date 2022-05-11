@@ -4,9 +4,6 @@ Select * From NashvilleHousing
 
 -- Standardize Sale Date
 
-Select saledateconverted, saledate
-From NashvilleHousing;
-
 Update NashvilleHousing 
 Set SaleDate = convert(date,saledate);
 
@@ -15,6 +12,9 @@ Add SaleDateConverted Date;
 
 Update NashvilleHousing 
 Set SaleDateConverted = convert(date,saledate);
+
+Select saledateconverted, saledate
+From NashvilleHousing;
 
 -- Populate Property Address Data
 
@@ -53,7 +53,6 @@ SUBSTRING(Propertyaddress, 1, charindex(',',propertyaddress) -1) as Address
 From NashvilleHousing
 ;
 
-
 Alter table nashvillehousing
 Add propertysplitaddress nvarchar(255); 
 
@@ -69,7 +68,6 @@ Set propertysplitcity = SUBSTRING(Propertyaddress, charindex(',',propertyaddress
 Select *
 From NashvilleHousing
 
-
 Select OwnerAddress
 From NashvilleHousing
 
@@ -79,8 +77,6 @@ owneraddress
  ,PARSENAME(replace(owneraddress, ',','.'),2)
   ,PARSENAME(replace(owneraddress, ',','.'),1)
 From NashvilleHousing
-
-
 
 Alter table nashvillehousing
 Add ownersplitaddress nvarchar(255); 
@@ -142,9 +138,26 @@ select *
 			   ORDER BY 
 					UniqueID
 					) row_num
-
 from NashvilleHousing
+)
+select * 
+from RowNumCTE
+
 -- order by parcelid
+)
+
+With RowNumCTE AS(
+select *
+, ROW_NUMBER() Over (
+  Partition By parcelid,
+               propertyaddress,
+			   saleprice,
+			   saledate,
+			   legalreference
+			   ORDER BY 
+					UniqueID
+					) row_num
+from NashvilleHousing
 )
 Select * 
 From RowNumCTE
