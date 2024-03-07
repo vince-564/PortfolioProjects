@@ -63,7 +63,7 @@ CREATE TABLE Portfolio_Covid_Deaths (
 );
 
 -- Load of the datafile
-LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.1/Data/budget/CovidDeaths.csv'
+LOAD DATA INFILE 'YOUR_FILE_PATH/CovidDeaths.csv'
 INTO TABLE Portfolio_Covid_Deaths
 FIELDS TERMINATED BY ',' ENCLOSED BY '"'
 ENCLOSED BY '"'
