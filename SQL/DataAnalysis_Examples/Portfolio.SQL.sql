@@ -1,4 +1,5 @@
 -- Creation of the Portfolio_Covid_Deaths table
+DROP TABLE IF EXISTS Portfolio_Covid_Deaths;
 CREATE TABLE Portfolio_Covid_Deaths (
     iso_code VARCHAR(255),
     continent VARCHAR(255),
@@ -61,12 +62,20 @@ CREATE TABLE Portfolio_Covid_Deaths (
     human_development_index FLOAT
 );
 
+-- Load of the datafile
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.1/Data/budget/CovidDeaths.csv'
 INTO TABLE Portfolio_Covid_Deaths
 FIELDS TERMINATED BY ',' ENCLOSED BY '"'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
+
+-- Convert date_entered2 as a DATETIME data type
+alter table Portfolio_Covid_Deaths
+add date_entered2 datetime;
+
+UPDATE Portfolio_Covid_Deaths
+SET date_entered2 = cast(date_entered as DATETIME);
 
 select *
 from Portfolio_Covid_Deaths
@@ -80,7 +89,7 @@ order by 3,4
 
 -- Select data that we going to be using
 
-Select location, date_entered, total_cases, new_cases, total_deaths, population
+Select location, date_entered2, total_cases, new_cases, total_deaths, population
 From Portfolio_Covid_Deaths
 order by 1, 2;
 
@@ -88,7 +97,7 @@ order by 1, 2;
 -- Looking at Total Cases vs Total Deaths
 -- Shows likelihood of dying if you contract covid in your country
 
-Select location, date_entered, total_cases, total_deaths, (total_deaths/total_cases) * 100 as death_percentage
+Select location, date_entered2, total_cases, total_deaths, (total_deaths/total_cases) * 100 as death_percentage
 From Portfolio_Covid_Deaths
 where location like '%states%'
 order by 1, 2;
@@ -98,7 +107,7 @@ order by 1, 2;
 -- Looking at Total Cases  vs Population
 -- Shows what percentage of population got covid
 
-Select location, date_entered, population, total_cases, (total_cases/population)*100 as cases_percentage
+Select location, date_entered2, population, total_cases, (total_cases/population)*100 as cases_percentage
 From Portfolio_Covid_Deaths
 where location like '%states%'
 order by cases_percentage ASC
@@ -146,11 +155,11 @@ order by TotalDeathCount DESC
 
 --  Global Numbers
 
-Select date_entered, sum(new_cases) AS Total_Cases, sum(new_deaths) AS Total_Deaths, sum(new_deaths)/sum(new_cases) * 100 AS death_percentage
+Select date_entered2, sum(new_cases) AS Total_Cases, sum(new_deaths) AS Total_Deaths, sum(new_deaths)/sum(new_cases) * 100 AS death_percentage
 From Portfolio_Covid_Deaths
 -- where location like '%states%'
 where continent is not null
-group by date_entered
+group by date_entered2
 order by 1, 2
 ;
 
@@ -160,35 +169,35 @@ Select sum(new_cases) AS Total_Cases, sum(new_deaths) AS Total_Deaths, sum(new_d
 From Portfolio_Covid_Deaths
 -- where location like '%states%'
 where continent is not null
--- group by date_entered
+-- group by date_entered2
 order by 1, 2
 ;
 
 -- Looking at total population vs total vaccinations
 
-Select cd.continent, cd.location, cd.date_entered, CD.population, cv.new_vaccinations, 
-sum(cv.new_vaccinations) OVER (partition by cd.location order by cd.location, cd.date_entered) AS RollingPeopleVaccinated
+Select cd.continent, cd.location, cd.date_entered2, CD.population, cv.new_vaccinations, 
+sum(cv.new_vaccinations) OVER (partition by cd.location order by cd.location, cd.date_entered2) AS RollingPeopleVaccinated
 -- , (RollingPeopleVaccinated/Population)*100
 From Portfolio_Covid_Deaths AS CD
 JOIN Portfolio_Covid_Deaths AS CV
 	ON CD.location = CV.location
-	AND cd.date_entered = CV.date_entered
+	AND cd.date_entered2 = CV.date_entered2
 where cd.continent is not null
 order by 2,3
 ;
 
 -- Use CTE
 
-With PopvsVac (Continent, Location, Date_Entered, Population, New_Vaccinations, RollingPeopleVaccinated)
+With PopvsVac (Continent, Location, date_entered2, Population, New_Vaccinations, RollingPeopleVaccinated)
 as
 (
-Select cd.continent, cd.location, cd.date_entered, CD.population, cv.new_vaccinations, 
-sum(cv.new_vaccinations) OVER (partition by cd.location order by cd.location, cd.date_entered) AS RollingPeopleVaccinated
+Select cd.continent, cd.location, cd.date_entered2, CD.population, cv.new_vaccinations, 
+sum(cv.new_vaccinations) OVER (partition by cd.location order by cd.location, cd.date_entered2) AS RollingPeopleVaccinated
 -- , (RollingPeopleVaccinated/Population)*100
 From Portfolio_Covid_Deaths AS CD
 JOIN Portfolio_Covid_Deaths AS CV
 	ON CD.location = CV.location
-	AND cd.date_entered = CV.date_entered
+	AND cd.date_entered2 = CV.date_entered2
 where cd.continent is not null
 order by New_Vaccinations desc, RollingPeopleVaccinated desc
 )
@@ -210,13 +219,13 @@ RollingPeopleVaccinated numeric
 );
 
 Insert Into PercentPopulationVaccinated
-Select cd.continent, cd.location, cd.date_entered, CD.population, cv.new_vaccinations, 
-sum(cv.new_vaccinations) OVER (partition by cd.location order by cd.location, cd.date_entered) AS RollingPeopleVaccinated
+Select cd.continent, cd.location, cd.date_entered2, CD.population, cv.new_vaccinations, 
+sum(cv.new_vaccinations) OVER (partition by cd.location order by cd.location, cd.date_entered2) AS RollingPeopleVaccinated
 -- , (RollingPeopleVaccinated/Population)*100
 From Portfolio_Covid_Deaths AS CD
 JOIN Portfolio_Covid_Deaths AS CV
 	ON CD.location = CV.location
-	AND cd.date_entered = CV.date_entered
+	AND cd.date_entered2 = CV.date_entered2
 -- where cd.continent is not null
 -- order by 2, 3
 ;
@@ -226,13 +235,13 @@ From PercentPopulationVaccinated;
 
 DROP VIEW IF EXISTS PercentPopulationVaccinated_2;
 CREATE VIEW PercentPopulationVaccinated_2 AS
-Select cd.continent, cd.location, cd.date_entered, CD.population, cv.new_vaccinations, 
-sum(cv.new_vaccinations) OVER (partition by cd.location order by cd.location, cd.date_entered) AS RollingPeopleVaccinated
+Select cd.continent, cd.location, cd.date_entered2, CD.population, cv.new_vaccinations, 
+sum(cv.new_vaccinations) OVER (partition by cd.location order by cd.location, cd.date_entered2) AS RollingPeopleVaccinated
 -- , (RollingPeopleVaccinated/Population)*100
 From Portfolio_Covid_Deaths AS CD
 JOIN Portfolio_Covid_Deaths AS CV
 	ON CD.location = CV.location
-	AND cd.date_entered = CV.date_entered
+	AND cd.date_entered2 = CV.date_entered2
 where cd.continent is not null
 -- order by 2, 3
 ;
