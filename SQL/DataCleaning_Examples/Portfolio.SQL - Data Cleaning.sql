@@ -1,17 +1,50 @@
+-- Creation of the Portfolio_Covid_Deaths table
+DROP TABLE IF EXISTS NashvilleHousing;
+CREATE TABLE NashvilleHousing (
+    UniqueID INT,
+    ParcelID VARCHAR(255),
+    LandUse VARCHAR(255),
+    PropertyAddress VARCHAR(255),
+    SaleDate VARCHAR(255),
+    SalePrice DECIMAL(10, 2),
+    LegalReference VARCHAR(255),
+    SoldAsVacant VARCHAR(3), -- Assuming Yes/No
+    OwnerName VARCHAR(255),
+    OwnerAddress VARCHAR(255),
+    Acreage DECIMAL(5, 2),
+    TaxDistrict VARCHAR(255),
+    LandValue DECIMAL(10, 2),
+    BuildingValue DECIMAL(10, 2),
+    TotalValue DECIMAL(10, 2),
+    YearBuilt INT,
+    Bedrooms INT,
+    FullBath INT,
+    HalfBath INT
+);
+
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.1/Data/budget/Nashville_Housing.csv'
+INTO TABLE NashvilleHousing
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\n' -- Corrected the line termination character
+IGNORE 1 ROWS;
+
 -- Cleaning Data in SQL Queries
 
-Select * From NashvilleHousing
+Select * From NashvilleHousing;
 
 -- Standardize Sale Date
 
-Update NashvilleHousing 
-Set SaleDate = convert(date,saledate);
+-- UPDATE NashvilleHousing
+-- SET SaleDate = STR_TO_DATE(SaleDate, '%M %e, %Y');
+
+Select * From NashvilleHousing;
+
 
 Alter table nashvillehousing
-Add SaleDateConverted Date; 
+Add Column SaleDateConverted datetime; 
 
 Update NashvilleHousing 
-Set SaleDateConverted = convert(date,saledate);
+Set SaleDateConverted = STR_TO_DATE(SaleDate, '%M %e, %Y');
 
 Select saledateconverted, saledate
 From NashvilleHousing;
@@ -20,81 +53,86 @@ From NashvilleHousing;
 
 Select *, PropertyAddress 
 From NashvilleHousing
--- Where propertyaddress is null;
-order by ParcelID;
-
-select a.ParcelID, a.PropertyAddress, b.ParcelID, b.PropertyAddress, ISNULL(a.propertyaddress, b.propertyaddress)
-from NashvilleHousing AS a
-JOIN NashvilleHousing AS b
-	ON a.ParcelID = b.ParcelID
-	AND a.[UniqueID ] != b.[UniqueID ]
-Where a.PropertyAddress is null
+order by ParcelID
 ;
 
-Update a
-set PropertyAddress = ISNULL(a.propertyaddress, b.propertyaddress)
-from NashvilleHousing AS a
+-- Check if any address data is missing
+
+SELECT a.ParcelID, a.PropertyAddress, b.ParcelID AS b_ParcelID, b.PropertyAddress AS b_PropertyAddress
+FROM NashvilleHousing AS a
 JOIN NashvilleHousing AS b
 	ON a.ParcelID = b.ParcelID
-	AND a.[UniqueID ] <> b.[UniqueID ]
-Where a.PropertyAddress is null
+	AND a.UniqueID != b.UniqueID
+WHERE a.PropertyAddress IS NULL;
+
+UPDATE NashvilleHousing AS a
+JOIN NashvilleHousing AS b
+	ON a.ParcelID = b.ParcelID
+	AND a.UniqueID <> b.UniqueID
+SET a.PropertyAddress = IFNULL(a.propertyaddress, b.propertyaddress)
+WHERE a.PropertyAddress IS NULL
 ;
 
---Breaking out address into individual columns (address, city, state)
+-- Breaking out address into individual columns (address, city, state)
 
 Select PropertyAddress 
-From NashvilleHousing
+From NashvilleHousing;
 -- Where propertyaddress is null
 -- order by ParcelID;
 
 SELECT 
-SUBSTRING(Propertyaddress, 1, charindex(',',propertyaddress) -1) as Address
-, SUBSTRING(Propertyaddress, charindex(',',propertyaddress) +1, len(propertyaddress)) as City
-From NashvilleHousing
-;
+  SUBSTRING(PropertyAddress, 1, LOCATE(',', PropertyAddress) - 1) AS Address,
+  SUBSTRING(PropertyAddress, LOCATE(',', PropertyAddress) + 1) AS City
+FROM NashvilleHousing;
 
 Alter table nashvillehousing
-Add propertysplitaddress nvarchar(255); 
+Add propertysplitaddress VARCHAR(255);
 
-Update NashvilleHousing 
-Set propertysplitaddress = SUBSTRING(Propertyaddress, 1, charindex(',',propertyaddress) -1)
+UPDATE NashvilleHousing
+SET propertysplitaddress = SUBSTRING(PropertyAddress, 1, LOCATE(',', PropertyAddress) - 1)
+WHERE PropertyAddress LIKE '%,%';
 
 Alter table nashvillehousing
 Add propertysplitcity nvarchar(255); 
 
 Update NashvilleHousing 
-Set propertysplitcity = SUBSTRING(Propertyaddress, charindex(',',propertyaddress) +1, len(propertyaddress))
+Set propertysplitcity = SUBSTRING(PropertyAddress, LOCATE(',', PropertyAddress) + 1, length(propertyaddress));
 
 Select *
-From NashvilleHousing
+From NashvilleHousing;
+
+-- A second methond in breaking out address into individual columns (address, city, state)
 
 Select OwnerAddress
-From NashvilleHousing
+From NashvilleHousing;
 
-Select
-owneraddress 
-,PARSENAME(replace(owneraddress, ',','.'),3)
- ,PARSENAME(replace(owneraddress, ',','.'),2)
-  ,PARSENAME(replace(owneraddress, ',','.'),1)
-From NashvilleHousing
+SELECT
+  owneraddress,
+  SUBSTRING_INDEX(owneraddress, ',', -1) AS State,
+  SUBSTRING_INDEX(SUBSTRING_INDEX(owneraddress, ',', -2), ',', 1) AS City,
+  SUBSTRING_INDEX(SUBSTRING_INDEX(owneraddress, ',', -3), ',', 1) AS Address
+FROM
+  NashvilleHousing;
+  
+-- A third methond in breaking out address into individual columns (address, city, state)
 
 Alter table nashvillehousing
 Add ownersplitaddress nvarchar(255); 
 
 Update NashvilleHousing 
-Set ownersplitaddress = PARSENAME(replace(owneraddress, ',','.'),3)
+Set ownersplitaddress = substring_index(substring_index(owneraddress, ',', -3),',', 1);
 
 Alter table nashvillehousing
 Add ownersplitcity nvarchar(255); 
 
 Update NashvilleHousing 
-Set ownersplitcity = PARSENAME(replace(owneraddress, ',','.'),2)
+Set ownersplitcity = substring_index(substring_index(owneraddress, ',', -2),',', 1);
 
 Alter table nashvillehousing
 Add ownersplitstate nvarchar(255); 
 
 Update NashvilleHousing 
-Set ownersplitstate = PARSENAME(replace(owneraddress, ',','.'),1)
+Set ownersplitstate = substring_index(substring_index(owneraddress, ',', -1),',', 1);
 
 select * from NashvilleHousing;
 
@@ -114,7 +152,7 @@ select SoldAsVacant
 	   when SoldAsVacant = 'N' then 'No'
 	   else SoldAsVacant
 	   end
-from NashvilleHousing
+from NashvilleHousing;
 
 
 update NashvilleHousing
@@ -141,10 +179,9 @@ select *
 from NashvilleHousing
 )
 select * 
-from RowNumCTE
+from RowNumCTE;
 
 -- order by parcelid
-)
 
 With RowNumCTE AS(
 select *
@@ -169,13 +206,14 @@ Where row_num > 1
 
 -- Delete Unused Columns
 
-
 select * 
 from NashvilleHousing
 ;
 
 ALTER TABLE NashvilleHousing
-DROP COLUMN owneraddress, taxdistrict, propertyaddress
+DROP COLUMN owneraddress,
+DROP COLUMN taxdistrict,
+DROP COLUMN propertyaddress;
 
 ALTER TABLE NashvilleHousing
-DROP COLUMN saledate
+DROP COLUMN saledate;
