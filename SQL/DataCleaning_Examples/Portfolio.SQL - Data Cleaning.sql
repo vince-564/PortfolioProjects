@@ -22,7 +22,7 @@ CREATE TABLE NashvilleHousing (
     HalfBath INT
 );
 
-LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.1/Data/budget/Nashville_Housing.csv'
+LOAD DATA INFILE 'YOUR_FILE_PATH/Nashville_Housing.csv'
 INTO TABLE NashvilleHousing
 FIELDS TERMINATED BY ',' ENCLOSED BY '"'
 LINES TERMINATED BY '\n' -- Corrected the line termination character
