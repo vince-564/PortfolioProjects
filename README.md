@@ -35,7 +35,6 @@ Please review a few of the projects within my professional portfolio.
 * Contact
 ## Portfolio Projects
 Below is the list of data analytic projects that I have conducted.
-<br>
 ### Training Machine Learning / Computer Vision Algorithms
 Code: [CIFAR_10_DATA_PartI.ipynb](Python/CIFAR_10_DATA_PartI.ipynb), [CIFAR_10_DATA_PartII.ipynb](Python/CIFAR_10_DATA_PartII.ipynb)
 
@@ -48,7 +47,6 @@ Skills: Python Programming, Deep Learning Concepts, TensorFlow, Data Preprocessi
 Technology: Artificial Intelligence (AI), Blockchain, Internet of Things (IoT), Cloud Computing, Data Science, Cybersecurity, Quantum Computing.
 
 Result: Upon completion of the machine learning project on the CIFAR-10 dataset, the results would entail metrics such as accuracy, precision, and recall, alongside a confusion matrix to assess the model's classification performance. Visualizations and comparative analyses would provide insights into the model's behavior and benchmark its effectiveness, guiding potential deployment strategies and future research directions.
-<br>
 ### CovidDeaths
 Code: [DataAnalysis_COVID_Dataset](SQL/DataAnalysis_Examples)
 
@@ -69,4 +67,12 @@ Skills: Data Cleaning, Data Visualization, Statistical Analysis, Programming Ski
 Technology: MySQL, phpMyAdmin, MySQL Workbench, Navicat for MySQL, HeidiSQL, Sequel Pro
 
 Result: Performing Exploratory Data Analysis (EDA) on the Nashville Housing Dataset can lead to a clearer and more readable dataset, enhancing insights into housing market trends.
+## Education
+* M.S. in Advanced Data Analytics | University of North Texas | Denton, TX | Anticipated Graduation – 2024
+* BBA in Marketing | Freed-Hardeman University | Henderson, TN | 2010 – 2015
+
+## Certificates
+* [Google Data Analytics](https://www.credly.com/badges/76ddf835-5084-44d6-97a2-244200cc2675) – March 2022
+* [Professional Scrum Developer™ I (PSD I)](https://www.credly.com/badges/b29a262a-2e62-4890-8c3d-24e909320103/linked_in) – March 2023
+* [Certified SAFe® 6 Practitioner](https://www.credly.com/badges/128c635e-d92f-4eea-bbfa-7ebf38fcd6f0/public_url) – May 2023
 
