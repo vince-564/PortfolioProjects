@@ -49,8 +49,8 @@ Technology: Artificial Intelligence (AI), Blockchain, Internet of Things (IoT), 
 
 Result: Upon completion of the machine learning project on the CIFAR-10 dataset, the results would entail metrics such as accuracy, precision, and recall, alongside a confusion matrix to assess the model's classification performance. Visualizations and comparative analyses would provide insights into the model's behavior and benchmark its effectiveness, guiding potential deployment strategies and future research directions.
 <br>
-### [CovidDeaths](SQL/DataAnalysis_Examples)
-Code: 
+### CovidDeaths
+Code: [DataAnalysis_COVID_Dataset](SQL/DataAnalysis_Examples)
 
 Description: The dataset comprises of deaths related to the Covid-19 virus. This project encompasses clearning the data and conducting analysis to facilitate insights on trends and patterns.
 
@@ -59,8 +59,8 @@ Skills: SQL Queries, Data Cleaning Techniques, Data Transformation, Indexing and
 Technology: MySQL, phpMyAdmin, MySQL Workbench, Navicat for MySQL, HeidiSQL, Sequel Pro
 
 Result:
-### [Nashville Housing Data Cleaning](SQL/DataCleaning_Examples)
-Code: 
+### Nashville Housing Data Cleaning
+Code: [DataCleaning_NashvilleHousing_Dataset](SQL/DataCleaning_Examples)
 
 Description: The dataset comprises a compilation of homes sold in Nashville spanning from 2013 to 2019. This project encompasses the initial stages of data handling, including loading, cleaning, and preprocessing.
 
