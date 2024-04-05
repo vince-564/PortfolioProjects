@@ -1,8 +1,6 @@
 # Vincent Dotson - Data Analyst Portfolio
-<br>
 
-## About 
-<br>
+## About Me
 
 Hello, I am Vincent Dotson, and I have been navigating the realm of data analytics for a significant period now. From the outset, I found immense joy in this field, prompting me to embark on the journey of pursuing a master’s in science to deepen my knowledge.
 
@@ -17,23 +15,23 @@ My CV in PDF.
 Please review a few of the projects within my professional portfolio.
 
 ## Table of Contents
-<br>
-
-## Portfolio Projects
-<br>
 
 Python
 
 SQL
 
-Code: CovidDeaths
+## Portfolio Projects
 
-Code: Nashville Housing Data Cleaning
+Below is the list of data analytic projects that I have conducted.
+
+<br>
 
 ## Training Machine Learning / Computer Vision Algorithms
 Code:
 
-Goal: To teach a computer how to recognize objects.
+Goal: To teach a computer how to recognize objects. The model was built then a 2nd iteration of the model was built in attempt to improve performance.
+
+Description: The CIFAR-10 dataset is a widely used benchmark dataset in the field of computer vision. It consists of 60,000 32x32 color images distributed across 10 classes, with 6,000 images per class. These classes include common objects such as airplanes, automobiles, birds, cats, deer, dogs, frogs, horses, ships, and trucks. The dataset is commonly used for training and evaluating machine learning and deep learning models for image classification tasks.
 
 Skills: Python Programming, Deep Learning Concepts, TensorFlow, Data Preprocessing, Model Evaluation, Understanding CIFAR-10 Dataset, Experience with Model Architectures
 
@@ -41,4 +39,19 @@ Technology: Artificial Intelligence (AI), Blockchain, Internet of Things (IoT), 
 
 Result: Upon completion of the machine learning project on the CIFAR-10 dataset, the results would entail metrics such as accuracy, precision, and recall, alongside a confusion matrix to assess the model's classification performance. Visualizations and comparative analyses would provide insights into the model's behavior and benchmark its effectiveness, guiding potential deployment strategies and future research directions.
 
+<br>
+
+## CovidDeaths
+Code
+
+## Nashville Housing Data Cleaning
+Code:
+
+Description: The dataset comprises a compilation of homes sold in Nashville spanning from 2013 to 2019. This project encompasses the initial stages of data handling, including loading, cleaning, and preprocessing.
+
+Skills: Data Cleaning, Data Visualization, Statistical Analysis, Programming Skills, Domain Knowledge, Critical Thinking
+
+Technology: MySQL
+
+Result: Performing Exploratory Data Analysis (EDA) on the Nashville Housing Dataset can lead to a clearer and more readable dataset, enhancing insights into housing market trends.
 
