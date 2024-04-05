@@ -18,9 +18,14 @@ Please review a few of the projects within my professional portfolio.
 
 * Portfolio Projects
   * Python
+    * Training Machine Learning / Computer Vision Algorithms
+    * bullet point
   * SQL
+    * CovidDeaths
+    * Nashville Housing Data Cleaning
   * Excel
   * Tableau
+    * bullet point
   * PowerBI
     
 * Education
