@@ -36,7 +36,7 @@ Below is the list of data analytic projects that I have conducted.
 ### Training Machine Learning / Computer Vision Algorithms
 Code: [CIFAR_10_DATA_PartI.ipynb](Python/CIFAR_10_DATA_PartI.ipynb), [CIFAR_10_DATA_PartII.ipynb](Python/CIFAR_10_DATA_PartII.ipynb)
 
-Goal: To teach a computer how to recognize objects. The model was built then a 2nd iteration of the model was built in attempt to improve performance.
+Goal: To teach a computer how to recognize objects. The model was built then a second iteration of the model was built in attempt to improve performance.
 
 Description: The CIFAR-10 dataset is a widely used benchmark dataset in the field of computer vision. It consists of 60,000 32x32 color images distributed across 10 classes, with 6,000 images per class. These classes include common objects such as airplanes, automobiles, birds, cats, deer, dogs, frogs, horses, ships, and trucks. The dataset is commonly used for training and evaluating machine learning and deep learning models for image classification tasks.
 
@@ -48,13 +48,13 @@ Result: Upon completion of the machine learning project on the CIFAR-10 dataset,
 ### CovidDeaths
 Code: [DataAnalysis_COVID_Dataset](SQL/DataAnalysis_Examples)
 
-Description: The dataset comprises of deaths related to the Covid-19 virus. This project encompasses clearning the data and conducting analysis to facilitate insights on trends and patterns.
+Description: The dataset comprises of deaths related to the Covid-19 virus. This project encompasses cleaning the data and conducting analysis to facilitate insights on trends and patterns.
 
 Skills: SQL Queries, Data Cleaning Techniques, Data Transformation, Indexing and Optimization, Statistical Analysis in SQL, Data Visualization Tools
 
 Technology: MySQL, phpMyAdmin, MySQL Workbench, Navicat for MySQL, HeidiSQL, Sequel Pro
 
-Result:
+Result: After cleaning the Covid-19 death dataset, insightful analysis revealed emerging trends and patterns, providing valuable understanding of the virus's impact, and informing future public health strategies.
 ### Nashville Housing Data Cleaning
 Code: [DataCleaning_NashvilleHousing_Dataset](SQL/DataCleaning_Examples)
 
