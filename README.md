@@ -19,13 +19,11 @@ Please review a few of the projects within my professional portfolio.
 * [Portfolio Projects](https://github.com/vince-564/PortfolioProjects?tab=readme-ov-file#portfolio-projects)
   * Python
     * [Training Machine Learning / Computer Vision Algorithms](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#training-machine-learning--computer-vision-algorithms)
-    * bullet point
   * SQL
     * [Covid-19 Data Analysis](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#coviddeaths)
     * [NashvilleHousing Data Cleaning](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#nashville-housing-data-cleaning)
   * Excel
   * Tableau
-    * bullet point
   * PowerBI
     
 * [Education](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#education)
