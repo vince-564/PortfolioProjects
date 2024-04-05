@@ -23,9 +23,7 @@ SQL
 ## Portfolio Projects
 
 Below is the list of data analytic projects that I have conducted.
-
 <br>
-
 ## Training Machine Learning / Computer Vision Algorithms
 Code:
 
@@ -38,20 +36,25 @@ Skills: Python Programming, Deep Learning Concepts, TensorFlow, Data Preprocessi
 Technology: Artificial Intelligence (AI), Blockchain, Internet of Things (IoT), Cloud Computing, Data Science, Cybersecurity, Quantum Computing.
 
 Result: Upon completion of the machine learning project on the CIFAR-10 dataset, the results would entail metrics such as accuracy, precision, and recall, alongside a confusion matrix to assess the model's classification performance. Visualizations and comparative analyses would provide insights into the model's behavior and benchmark its effectiveness, guiding potential deployment strategies and future research directions.
-
 <br>
-
 ## CovidDeaths
-Code
+Code: 
 
+Description: The dataset comprises of deaths related to the Covid-19 virus. This project encompasses clearning the data and conducting analysis to facilitate insights on trends and patterns.
+
+Skills: SQL Queries, Data Cleaning Techniques, Data Transformation, Indexing and Optimization, Statistical Analysis in SQL, Data Visualization Tools
+
+Technology: MySQL, phpMyAdmin, MySQL Workbench, Navicat for MySQL, HeidiSQL, Sequel Pro
+
+Result:
 ## Nashville Housing Data Cleaning
-Code:
+Code: 
 
 Description: The dataset comprises a compilation of homes sold in Nashville spanning from 2013 to 2019. This project encompasses the initial stages of data handling, including loading, cleaning, and preprocessing.
 
 Skills: Data Cleaning, Data Visualization, Statistical Analysis, Programming Skills, Domain Knowledge, Critical Thinking
 
-Technology: MySQL
+Technology: MySQL, phpMyAdmin, MySQL Workbench, Navicat for MySQL, HeidiSQL, Sequel Pro
 
 Result: Performing Exploratory Data Analysis (EDA) on the Nashville Housing Dataset can lead to a clearer and more readable dataset, enhancing insights into housing market trends.
 
