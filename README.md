@@ -21,8 +21,8 @@ Please review a few of the projects within my professional portfolio.
     * [Training Machine Learning / Computer Vision Algorithms](Python)
     * bullet point
   * SQL
-    * 
-    * 
+    * [Covid-19 Data Analysis](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#coviddeaths)
+    * [NashvilleHousing Data Cleaning](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#nashville-housing-data-cleaning)
   * Excel
   * Tableau
     * bullet point
