@@ -16,13 +16,13 @@ Please review a few of the projects within my professional portfolio.
 ## Table of Contents
 * [About Me](https://github.com/vince-564/PortfolioProjects?tab=readme-ov-file#about-me)
 
-* Portfolio Projects
+* [Portfolio Projects](https://github.com/vince-564/PortfolioProjects?tab=readme-ov-file#portfolio-projects)
   * Python
-    * Training Machine Learning / Computer Vision Algorithms
+    * [Training Machine Learning / Computer Vision Algorithms](Python)
     * bullet point
   * SQL
-    * CovidDeaths
-    * Nashville Housing Data Cleaning
+    * 
+    * 
   * Excel
   * Tableau
     * bullet point
@@ -37,7 +37,7 @@ Please review a few of the projects within my professional portfolio.
 Below is the list of data analytic projects that I have conducted.
 <br>
 ### Training Machine Learning / Computer Vision Algorithms
-Code:
+Code: [CIFAR_10_DATA_PartI.ipynb](Python/CIFAR_10_DATA_PartI.ipynb), [CIFAR_10_DATA_PartII.ipynb](Python/CIFAR_10_DATA_PartII.ipynb)
 
 Goal: To teach a computer how to recognize objects. The model was built then a 2nd iteration of the model was built in attempt to improve performance.
 
@@ -49,7 +49,7 @@ Technology: Artificial Intelligence (AI), Blockchain, Internet of Things (IoT), 
 
 Result: Upon completion of the machine learning project on the CIFAR-10 dataset, the results would entail metrics such as accuracy, precision, and recall, alongside a confusion matrix to assess the model's classification performance. Visualizations and comparative analyses would provide insights into the model's behavior and benchmark its effectiveness, guiding potential deployment strategies and future research directions.
 <br>
-### CovidDeaths
+### [CovidDeaths](SQL/DataAnalysis_Examples)
 Code: 
 
 Description: The dataset comprises of deaths related to the Covid-19 virus. This project encompasses clearning the data and conducting analysis to facilitate insights on trends and patterns.
@@ -59,7 +59,7 @@ Skills: SQL Queries, Data Cleaning Techniques, Data Transformation, Indexing and
 Technology: MySQL, phpMyAdmin, MySQL Workbench, Navicat for MySQL, HeidiSQL, Sequel Pro
 
 Result:
-### Nashville Housing Data Cleaning
+### [Nashville Housing Data Cleaning](SQL/DataCleaning_Examples)
 Code: 
 
 Description: The dataset comprises a compilation of homes sold in Nashville spanning from 2013 to 2019. This project encompasses the initial stages of data handling, including loading, cleaning, and preprocessing.
