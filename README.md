@@ -14,15 +14,20 @@ My CV in PDF.
 
 Please review a few of the projects within my professional portfolio.
 ## Table of Contents
-Python
+* About Me
 
-SQL
-
-Excel
-
-Tableau
-
-PowerBI
+* Portfolio Projects
+  * Python
+  * SQL
+  * Excel
+  * Tableau
+  * PowerBI
+    
+* Education
+  
+* Certificates
+  
+* Contact
 ## Portfolio Projects
 Below is the list of data analytic projects that I have conducted.
 <br>
