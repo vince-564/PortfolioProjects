@@ -28,11 +28,11 @@ Please review a few of the projects within my professional portfolio.
     * bullet point
   * PowerBI
     
-* Education
+* [Education](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#education)
   
-* Certificates
+* [Certificates](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#certificates)
   
-* Contact
+* [Contact](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#contact)
 ## Portfolio Projects
 Below is the list of data analytic projects that I have conducted.
 ### Training Machine Learning / Computer Vision Algorithms
@@ -78,4 +78,3 @@ Result: Performing Exploratory Data Analysis (EDA) on the Nashville Housing Data
 ## Contact
 * Email: [vincent.l.dotson@gmail.com](mailto:vincent.l.dotson@gmail.com)
 * LinkedIn: [Vincent Dotson](www.linkedin.com/in/vincent-dotson-a46244b5)
-
