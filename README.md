@@ -13,18 +13,20 @@ As I continue to evolve in my career, I look forward to further contributing to 
 My CV in PDF.
 
 Please review a few of the projects within my professional portfolio.
-
 ## Table of Contents
-
 Python
 
 SQL
 
-## Portfolio Projects
+Excel
 
+Tableau
+
+PowerBI
+## Portfolio Projects
 Below is the list of data analytic projects that I have conducted.
 <br>
-## Training Machine Learning / Computer Vision Algorithms
+### Training Machine Learning / Computer Vision Algorithms
 Code:
 
 Goal: To teach a computer how to recognize objects. The model was built then a 2nd iteration of the model was built in attempt to improve performance.
@@ -37,7 +39,7 @@ Technology: Artificial Intelligence (AI), Blockchain, Internet of Things (IoT), 
 
 Result: Upon completion of the machine learning project on the CIFAR-10 dataset, the results would entail metrics such as accuracy, precision, and recall, alongside a confusion matrix to assess the model's classification performance. Visualizations and comparative analyses would provide insights into the model's behavior and benchmark its effectiveness, guiding potential deployment strategies and future research directions.
 <br>
-## CovidDeaths
+### CovidDeaths
 Code: 
 
 Description: The dataset comprises of deaths related to the Covid-19 virus. This project encompasses clearning the data and conducting analysis to facilitate insights on trends and patterns.
@@ -47,7 +49,7 @@ Skills: SQL Queries, Data Cleaning Techniques, Data Transformation, Indexing and
 Technology: MySQL, phpMyAdmin, MySQL Workbench, Navicat for MySQL, HeidiSQL, Sequel Pro
 
 Result:
-## Nashville Housing Data Cleaning
+### Nashville Housing Data Cleaning
 Code: 
 
 Description: The dataset comprises a compilation of homes sold in Nashville spanning from 2013 to 2019. This project encompasses the initial stages of data handling, including loading, cleaning, and preprocessing.
