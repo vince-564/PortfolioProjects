@@ -14,7 +14,7 @@ My CV in PDF.
 
 Please review a few of the projects within my professional portfolio.
 ## Table of Contents
-* About Me
+* [About Me]([url](https://github.com/vince-564/PortfolioProjects?tab=readme-ov-file#about-me))
 
 * Portfolio Projects
   * Python
