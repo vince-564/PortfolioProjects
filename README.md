@@ -69,11 +69,13 @@ Result: Performing Exploratory Data Analysis (EDA) on the Nashville Housing Data
 ### Excel_Workbook
 Code: [Workbook](https://github.com/vince-564/PortfolioProjects/blob/main/Excel/Excel_WorkBook.xlsx)
 
-Description: Within the workbook are exercises that showcase my skills related to Excel
+Description: Within the workbook are exercises of varying degrees of complexity that showcase my skills related to Excel
 
 Skills: Formulas and Functions, Data Analysis, Data Validation, Array Formulas, Scenario Analysis, Advanced Data Cleaning, Problem Solving
 
 Technology: Microsoft Excel
+
+Result: Successfully complete workbook challenges
 ## Education
 * M.S. in Advanced Data Analytics | University of North Texas | Denton, TX | Anticipated Graduation – 2024
 * BBA in Marketing | Freed-Hardeman University | Henderson, TN | 2010 – 2015
