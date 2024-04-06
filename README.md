@@ -67,7 +67,7 @@ Technology: MySQL, phpMyAdmin, MySQL Workbench, Navicat for MySQL, HeidiSQL, Seq
 
 Result: Performing Exploratory Data Analysis (EDA) on the Nashville Housing Dataset can lead to a clearer and more readable dataset, enhancing insights into housing market trends.
 ### Excel_Workbook
-Code: [Workbook](https://github.com/vince-564/PortfolioProjects/tree/main/Excel)
+Code: [Workbook](https://github.com/vince-564/PortfolioProjects/blob/main/Excel/Excel_WorkBook.xlsx)
 
 Description: Within the workbook are exercises that showcase my skills related to Excel
 
