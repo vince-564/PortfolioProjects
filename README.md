@@ -65,6 +65,14 @@ Skills: Data Cleaning, Data Visualization, Statistical Analysis, Programming Ski
 Technology: MySQL, phpMyAdmin, MySQL Workbench, Navicat for MySQL, HeidiSQL, Sequel Pro
 
 Result: Performing Exploratory Data Analysis (EDA) on the Nashville Housing Dataset can lead to a clearer and more readable dataset, enhancing insights into housing market trends.
+### Excel_Workbook
+Code: [Workbook](https://github.com/vince-564/PortfolioProjects/tree/main/Excel)
+
+Description: Within the workbook are exercises that showcase my skills related to Excel
+
+Skills: Formulas and Functions, Data Analysis, Data Validation, Array Formulas, Scenario Analysis, Advanced Data Cleaning, Problem Solving
+
+Technology: Microsoft Excel
 ## Education
 * M.S. in Advanced Data Analytics | University of North Texas | Denton, TX | Anticipated Graduation – 2024
 * BBA in Marketing | Freed-Hardeman University | Henderson, TN | 2010 – 2015
