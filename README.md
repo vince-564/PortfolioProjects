@@ -10,7 +10,7 @@ My personality is well-suited to the demands of this role, as I enjoy delving in
 
 As I continue to evolve in my career, I look forward to further contributing to the fascinating and ever-expanding world of data analytics.
 
-My CV in [PDF](https://github.com/vince-564/PortfolioProjects/blob/main/Resume.pdf).
+My CV in a [PDF](https://github.com/vince-564/PortfolioProjects/blob/main/Resume.pdf).
 
 Please review a few of the projects within my professional portfolio.
 ## Table of Contents
