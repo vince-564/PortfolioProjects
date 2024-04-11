@@ -77,18 +77,14 @@ Technology: Microsoft Excel
 
 Result: Successfully complete workbook challenges
 ### Tableau
-
 #### Dataset Description: This dataset consists of dummy data about employees in a company, including the employee demographics., work history, departments and salaries.
-
-Chart1 Task: Create a visualization that provides a breakdown between the male and female employees working in the company each year, starting from 1990. 
-
-Link: [Chart1](https://public.tableau.com/views/Chart1_17128589593800/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
+* Chart1 Task: Create a visualization that provides a breakdown between the male and female employees working in the company each year, starting from 1990. 
+  * Link: [Chart1](https://public.tableau.com/views/Chart1_17128589593800/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
 Description. 
 ## Education
 * M.S. in Advanced Data Analytics | University of North Texas | Denton, TX | Anticipated Graduation – 2024
 * BBA in Marketing | Freed-Hardeman University | Henderson, TN | 2010 – 2015
-
 ## Certificates
 * [Google Data Analytics](https://www.credly.com/badges/76ddf835-5084-44d6-97a2-244200cc2675) – March 2022
 * [Professional Scrum Developer™ I (PSD I)](https://www.credly.com/badges/b29a262a-2e62-4890-8c3d-24e909320103/linked_in) – March 2023
