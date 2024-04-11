@@ -24,7 +24,7 @@ Please review a few of the projects within my professional portfolio.
     * [NashvilleHousing Data Cleaning](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#nashville-housing-data-cleaning)
   * Excel
     * [Excel_Workbook](https://github.com/vince-564/PortfolioProjects?tab=readme-ov-file#excel_workbook)
-  * Tableau[](https://public.tableau.com/views/Chart1_17128589593800/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
+  * [Tableau](https://public.tableau.com/views/Chart1_17128589593800/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
   * PowerBI
     
 * [Education](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#education)
