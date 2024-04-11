@@ -79,9 +79,9 @@ Result: Successfully complete workbook challenges
 #### Dataset Description: The dataset is comprised of synthesized information concerning employees within a company, encompassing demographic profiles, work tenure, departmental affiliations, and salary details. After performing SQL queries, I have returned results that will be visualized in Tableau.
   * DataSource: [Link](https://drive.google.com/file/d/1q2M8XPkYI9RIo38T5bJxZCcjdPfQgmTL/view?usp=drive_link)
     * Task 1:
-      * SQL Query: [](https://github.com/vince-564/PortfolioProjects/blob/main/SQL/Tableau_DataSources/Task1.sql)
+      * [SQL Query:](https://github.com/vince-564/PortfolioProjects/blob/main/SQL/Tableau_DataSources/Task1.sql)
       * Goal: Create a visualization that provides a breakdown between the male and female employees working in the company each year, starting from 1990.
-      * Link: [Chart1](https://public.tableau.com/views/Chart1_17128589593800/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
+      * [Link:](https://public.tableau.com/views/Chart1_17128589593800/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 ## Education
 * M.S. in Advanced Data Analytics | University of North Texas | Denton, TX | Anticipated Graduation – 2024
 * BBA in Marketing | Freed-Hardeman University | Henderson, TN | 2010 – 2015
