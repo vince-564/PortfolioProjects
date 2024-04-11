@@ -22,8 +22,7 @@ Please review a few of the projects within my professional portfolio.
   * SQL
     * [Covid-19 Data Analysis](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#coviddeaths)
     * [NashvilleHousing Data Cleaning](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#nashville-housing-data-cleaning)
-  * Excel
-    * [Excel_Workbook](https://github.com/vince-564/PortfolioProjects?tab=readme-ov-file#excel_workbook)
+  * [Excel](https://github.com/vince-564/PortfolioProjects?tab=readme-ov-file#excel_workbook)
   * [Tableau](https://github.com/vince-564/PortfolioProjects/blob/main/README.md#tableau)
   * PowerBI
     
