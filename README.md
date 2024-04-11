@@ -77,7 +77,7 @@ Technology: Microsoft Excel
 
 Result: Successfully complete workbook challenges
 ### Tableau
-#### Dataset Description: The dataset comprises synthesized information concerning employees within a corporate environment, encompassing demographic profiles, work tenure, departmental affiliations, and salary details.
+#### Dataset Description: The dataset is comprised of synthesized information concerning employees within a company, encompassing demographic profiles, work tenure, departmental affiliations, and salary details.
   * Link: [Chart1](https://public.tableau.com/views/Chart1_17128589593800/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
 Description. 
