@@ -83,13 +83,13 @@ Result: Successfully complete workbook challenges
        * Goal: Create a visualization that provides a breakdown between the male and female employees working in the company each year, starting from 1990.
      * Task 2:
        * Chart Name: Number of managers per department
-       * Goal: Create a visualization that provides a breakdown between the male and female employees working in the company each year, starting from 1990.
+       * Goal: Compare the number of male managers to the number of female managers from different departments for each year, starting from 1990. 
      * Task 3:
        * Chart Name: Average annual employee salary
-       * Goal: Create a visualization that provides a breakdown between the male and female employees working in the company each year, starting from 1990.
+       * Goal: Compare the average salary of female versus male employees in the entire company until year 2002, and add a filter allowing you to see that per each department.
      * Task 4:
        * Chart Name: Average employee salary (since 1990)
-       * Goal: Create a visualization that provides a breakdown between the male and female employees working in the company each year, starting from 1990.
+       * Goal: Create an SQL stored procedure that will allow you to obtain the average male and female salary per department within a certain salary range. Let this range be defined by two values the user can insert when calling the procedure. Finally, visualize the obtained result-set in Tableau as a double bar chart. 
 ## Education
 * M.S. in Advanced Data Analytics | University of North Texas | Denton, TX | Anticipated Graduation – 2024
 * BBA in Marketing | Freed-Hardeman University | Henderson, TN | 2010 – 2015
