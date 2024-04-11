@@ -82,7 +82,7 @@ Result: Successfully complete workbook challenges
 
 Chart1 Task: Create a visualization that provides a breakdown between the male and female employees working in the company each year, starting from 1990. 
 
-Link: Chart1[](https://public.tableau.com/views/Chart1_17128589593800/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
+Link: [Chart1](https://public.tableau.com/views/Chart1_17128589593800/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
 Description. 
 ## Education
