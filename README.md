@@ -77,7 +77,7 @@ Technology: Microsoft Excel
 Result: Successfully complete workbook challenges
 ### Tableau
 #### Dataset Description: The dataset is comprised of synthesized information concerning employees within a company, encompassing demographic profiles, work tenure, departmental affiliations, and salary details. After performing SQL queries, I have returned results from certain tasks that will be visualized in Tableau.
-   * Link: [Portfolio][https://github.com/vince-564/PortfolioProjects/blob/main/SQL/Tableau_DataSources/Task1.csv](https://public.tableau.com/views/Portfolio_17128729136840/Portfolio?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
+   * Link: [Portfolio](https://public.tableau.com/views/Portfolio_17128729136840/Portfolio?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
      * Task 1:
        * Chart Name: A breakdown between male and female employees
        * Goal: Create a visualization that provides a breakdown between the male and female employees working in the company each year, starting from 1990.
