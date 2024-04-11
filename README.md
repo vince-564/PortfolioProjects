@@ -76,7 +76,7 @@ Technology: Microsoft Excel
 
 Result: Successfully complete workbook challenges
 ### Tableau
-#### Dataset Description: The dataset is comprised of synthesized information concerning employees within a company, encompassing demographic profiles, work tenure, departmental affiliations, and salary details. After performing SQL queries, I have returned results from certain tasks that will be visualized in Tableau.
+Dataset Description: The dataset is comprised of synthesized information concerning employees within a company, encompassing demographic profiles, work tenure, departmental affiliations, and salary details. After performing SQL queries, I have returned results from certain tasks that will be visualized in Tableau.
    * Link: [Portfolio](https://public.tableau.com/views/Portfolio_17128729136840/Portfolio?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
      * Task 1:
        * Chart Name: A breakdown between male and female employees
