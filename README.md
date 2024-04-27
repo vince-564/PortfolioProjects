@@ -97,6 +97,7 @@ Dataset Description: The dataset is comprised of synthesized information concern
 * [Google Data Analytics](https://www.credly.com/badges/76ddf835-5084-44d6-97a2-244200cc2675) – March 2022
 * [Professional Scrum Developer™ I (PSD I)](https://www.credly.com/badges/b29a262a-2e62-4890-8c3d-24e909320103/linked_in) – March 2023
 * [Certified SAFe® 6 Practitioner](https://www.credly.com/badges/128c635e-d92f-4eea-bbfa-7ebf38fcd6f0/public_url) – May 2023
+* [Foundation C# with Microsoft](https://www.freecodecamp.org/certification/VincentDotson12/foundational-c-sharp-with-microsoft) – May 2023
 ## Contact
 * Email: [vincent.l.dotson@gmail.com](mailto:vincent.l.dotson@gmail.com)
 * LinkedIn: [Vincent Dotson](www.linkedin.com/in/vincent-dotson-a46244b5)
