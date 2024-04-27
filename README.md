@@ -91,7 +91,7 @@ Dataset Description: The dataset is comprised of synthesized information concern
        * Chart Name: Average employee salary (since 1990)
        * Goal: Create an SQL stored procedure that will allow you to obtain the average male and female salary per department within a certain salary range. Let this range be defined by two values the user can insert when calling the procedure. Finally, visualize the obtained result-set in Tableau as a double bar chart. 
 ## Education
-* M.S. in Advanced Data Analytics | University of North Texas | Denton, TX | Anticipated Graduation – 2024
+* M.S. in Advanced Data Analytics | University of North Texas | Denton, TX | 2022 - Anticipated Graduation: 2024
 * BBA in Marketing | Freed-Hardeman University | Henderson, TN | 2010 – 2015
 ## Certificates
 * [Google Data Analytics](https://www.credly.com/badges/76ddf835-5084-44d6-97a2-244200cc2675) – March 2022
